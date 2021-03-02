@@ -1,0 +1,28 @@
+HTML
+
+<nav><nav/> = tag semantica usada para menu de navegação
+Alt + Shift + Seta Baixo = copia o codigo da linha para baixo
+
+digitar a tag seguida de . e escrevar qual a classe ja adiciona sem precisar abri e fechar <> ex: div.exemplo-tag
+
+classes wrapper ex class="container" = usadas repetidas vezes no codigo para facilitar a estruturação do layout da pagina 
+
+role="button" => informa ao navegar principalmente os mobile como renderizar o botão
+
+toda a <div> nova vem como padrao o display block invalida o display flex que são apenas para os filhos diretos 
+
+CSS 
+
+reset css = * { ex: margin: 0; padding: 0;...} aplica a formatação em todo o documento boa pratica deixar em primeiro
+:root {          declara uma variavel no css
+   --vermelho:
+   --preto:
+} 
+header nav a:hover {} = executa alteração quando passa o mouse em cima
+
+/* comentario css */
+
+background-size: cover = define o tamanho da imagem preenchendo toda a area
+
+
+
