@@ -11,6 +11,8 @@ role="button" => informa ao navegar principalmente os mobile como renderizar o b
 
 toda a <div> nova vem como padrao o display block invalida o display flex que são apenas para os filhos diretos 
 
+CRTL + Barra de espaço = ajuda a encontrar arquivo no diretorio
+
 CSS 
 
 reset css = * { ex: margin: 0; padding: 0;...} aplica a formatação em todo o documento boa pratica deixar em primeiro
@@ -22,7 +24,14 @@ header nav a:hover {} = executa alteração quando passa o mouse em cima
 
 /* comentario css */
 
-background-size: cover = define o tamanho da imagem preenchendo toda a area
+background-size: cover;  define o tamanho da imagem preenchendo toda a area
 
+cursor: pointer; deixa o mouse um seletor
+
+transition: .3s ease all; faz um delay de transição nas mudanças ao selecionar um botao ou algo similar
+
+classes wrapper (envelopar-pt-br) = serve para facilitar a formatação dos conteudos de modo que o elemento pai coordena os filhos diretos
+
+ 
 
 
