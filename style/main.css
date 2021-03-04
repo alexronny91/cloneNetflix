@@ -46,7 +46,7 @@ header nav a:hover {
 
 .filme-principal {
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('/img/capa-vikings2.jpg');
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.50)100%), url('https://www.themoviedb.org/t/p/original/eSjO3YB5Y4FuVQZTyuPQJo18cjG.jpg');
     height: 400px;
     background-size: cover;
     display: flex;
@@ -98,4 +98,8 @@ header nav a:hover {
     height: 100%;
     width: 100%;
     display: block;
+}
+
+.carrosel-filmes {
+    margin-top: 5px;
 }
