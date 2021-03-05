@@ -14,14 +14,16 @@
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
     
+    <!--pop-up-->
+    <link rel="stylesheet" href="style/popup.css">
 
 </head>
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">NETFLIX</h2>
+            <h2 class="logo">LEXFLIX</h2>
             <nav>
-                <a href="#">Início</a>        
+                <a href="index.html">Início</a>        
                 <a href="#">Séries</a>        
                 <a href="#">Filmes</a>        
                 <a href="#">Documentário</a>        
@@ -36,10 +38,14 @@
                 <h3 class="titulo">VIKINGS</h3>
                 <p class="descricao">Ragnar Lothbrok, um jovem que se considera descendente de Odin, é um guerreiro, fazendeiro e chefe de família. Visionário e sonhando viver diversas aventuras, ele acredita que as riquezas sonhadas por seu povo encontram-se além do mar Báltico. Mas para conseguir conquistá-las ele precisa convencer Earl Haraldson, o líder de seu povo, a permitir que ele e seus guerreiros viagem em direção à Inglaterra.</p>
                 <div class="botoes">
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" onclick="assistir()">
                         <i class="fas fa-play"></i>
                         ASSISTIR AGORA
                     </button>
+                    <div id="popup">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Auzs95InJzo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <i class="far fa-times-circle" onclick="fechar()"></i> 
+                    </div>
                     <button role="button" class="botao">
                         <i class="fas fa-info-circle"></i>
                         MAIS INFORMAÇÕES

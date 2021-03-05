@@ -14,3 +14,11 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+function assistir(){
+    document.getElementById('popup').style.display = 'block'
+}
+
+function fechar(){
+    document.getElementById('popup').style.display = 'none'
+}
