@@ -15,10 +15,11 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
-function assistir(){
-    document.getElementById('popup').style.display = 'block'
+
+function mostrar(id){
+    document.getElementById(id).style.display = 'flex'    
 }
 
-function fechar(){
-    document.getElementById('popup').style.display = 'none'
+function fechar(id){
+    document.getElementById(id).style.display = 'none'
 }

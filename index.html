@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Clone</title>
     <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/popup.css">
 
     <!--responsividade-->
     <link rel="stylesheet" href="style/responsive.css">
@@ -13,20 +15,18 @@
     <!--owl css-->
     <link rel="stylesheet" href="style/owl/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl/owl.theme.default.min.css">
-    
-    <!--pop-up-->
-    <link rel="stylesheet" href="style/popup.css">
 
 </head>
+
 <body>
     <header>
         <div class="container">
-            <h2 class="logo">LEXFLIX</h2>
+            <h2 class="logo">NETFLIX</h2>
             <nav>
-                <a href="index.html">Início</a>        
-                <a href="#">Séries</a>        
-                <a href="#">Filmes</a>        
-                <a href="#">Documentário</a>        
+                <a href="index.html">Início</a>
+                <a href="#">Séries</a>
+                <a href="#">Filmes</a>
+                <a href="#">Documentário</a>
             </nav>
         </div>
 
@@ -36,21 +36,22 @@
         <div class="filme-principal">
             <div class="container">
                 <h3 class="titulo">VIKINGS</h3>
-                <p class="descricao">Ragnar Lothbrok, um jovem que se considera descendente de Odin, é um guerreiro, fazendeiro e chefe de família. Visionário e sonhando viver diversas aventuras, ele acredita que as riquezas sonhadas por seu povo encontram-se além do mar Báltico. Mas para conseguir conquistá-las ele precisa convencer Earl Haraldson, o líder de seu povo, a permitir que ele e seus guerreiros viagem em direção à Inglaterra.</p>
+                <p class="descricao">Ragnar Lothbrok, um jovem que se considera descendente de Odin, é um guerreiro,
+                    fazendeiro e chefe de família. Visionário e sonhando viver diversas aventuras, ele acredita que as
+                    riquezas sonhadas por seu povo encontram-se além do mar Báltico. Mas para conseguir conquistá-las
+                    ele precisa convencer Earl Haraldson, o líder de seu povo, a permitir que ele e seus guerreiros
+                    viagem em direção à Inglaterra.
+                </p>
                 <div class="botoes">
-                    <button role="button" class="botao" onclick="assistir()">
+                    <button role="button" class="botao" onclick="mostrar('assistir')">
                         <i class="fas fa-play"></i>
                         ASSISTIR AGORA
                     </button>
-                    <div id="popup">
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Auzs95InJzo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <i class="far fa-times-circle" onclick="fechar()"></i> 
-                    </div>
-                    <button role="button" class="botao">
+                    <button role="button" class="botao" onclick="mostrar('maisInfo')">
                         <i class="fas fa-info-circle"></i>
                         MAIS INFORMAÇÕES
                     </button>
-                </div>    
+                </div>
             </div>
         </div>
     </main>
@@ -87,7 +88,29 @@
             <div class="item">
                 <img class="box-filme" src="img/mini-10.jpg" alt="" srcset="">
             </div>
-            
+        </div>
+    </div>
+
+    <div id="assistir" class="containerAssistir">
+        <div class="janelaAssistir">
+            <button class="fechar" onclick="fechar('assistir')">X</button>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Auzs95InJzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+
+    <div id="maisInfo" class="containerMaisInfo">
+        <div class="infoFilme">
+            <button class="fechar" onclick="fechar('maisInfo')">X</button>
+            <img class="fotoMaisInfo" src="img/bjron.jpg">
+            <h3>Mais Informações</h3>
+            <p>Lançamento: 3 de março de 2013</p>
+            <p>Encerramento: 30 de dezembro de 2013</p>
+            <p>Censura: 16 anos</p>
+            <p>Gênero: Ação e aventura / Drama histórico</p>
+            <p>Escrita e criada por: Michael Hirst</p>
+            <p>Episódios: 79</p>
+            <p>Temporadas: 6</p>
         </div>
     </div>
 
